@@ -10,6 +10,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
     "start": "cross-env NODE_ENV=development gulp start",
+    "build": "gulp build",
     "webp": "gulp webp",
     "imagemin": "gulp imagemin"
   },
