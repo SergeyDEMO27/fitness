@@ -1,0 +1,17 @@
+.communications {
+  display: flex;
+  width: 100%;
+  min-height: 337px;
+}
+
+@media (min-width: "768px") and (max-width: "1199px") {
+  .communications {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: "320px") and (max-width: "767px") {
+  .communications {
+    flex-direction: column;
+  }
+}

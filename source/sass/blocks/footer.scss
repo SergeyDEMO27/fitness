@@ -1,0 +1,161 @@
+.footer {
+  width: 100%;
+  min-height: 108px;
+  padding-top: 22px;
+  padding-bottom: 0px;
+  background-color: #030a1a;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+  color: $color-default-white;
+}
+
+.footer__logo {
+  width: 151px;
+}
+
+.footer__logo-title {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.02em;
+}
+
+.footer__navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 431px;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__navigation-link,
+.footer__social-link {
+  font-size: 14px;
+  color: $color-default-white;
+}
+
+.footer__navigation-link:hover {
+  color: #b4b4b4;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__social-link {
+  svg {
+    fill: #ffffff;
+  }
+
+  &:hover svg {
+    fill: #b4b4b4;
+  }
+}
+
+@media (min-width: "768px") and (max-width: "1199px") {
+  .footer {
+    padding-top: 25px;
+  }
+
+  .footer__wrapper {
+    max-width: 678px;
+  }
+
+  .footer__logo {
+    max-width: 82px;
+  }
+
+  .footer__logo-title {
+    font-size: 24px;
+  }
+
+  .footer__navigation-list {
+    width: 391px;
+    margin-right: 0;
+    margin-left: 19px;
+  }
+
+  .footer__social-list {
+    width: 100px;
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: "320px") and (max-width: "767px") {
+  .footer {
+    padding-top: 29px;
+    padding-bottom: 50px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    max-width: 290px;
+    align-items: flex-start;
+  }
+
+  .footer__logo-title {
+    font-size: 20px;
+  }
+
+  .footer__navigation {
+    max-width: 245px;
+  }
+
+  .footer__navigation-list {
+    position: relative;
+    max-width: 267px;
+    margin-bottom: 18px;
+  }
+
+  .footer__navigation-item {
+    width: 40%;
+    margin-bottom: 16px;
+  }
+
+  .footer__navigation-item--absolute {
+    position: absolute;
+    top: -40px;
+    right: 0;
+  }
+
+  .footer__navigation-link,
+  .footer__social-link {
+    font-size: 16px;
+  }
+
+  .footer__social-list {
+    width: 141px;
+    margin-left: 3px;
+  }
+
+  .footer__navigation-item--offers {
+    order: 1;
+  }
+
+  .footer__navigation--instructors {
+    order: 2;
+  }
+
+  .footer__navigation-item--subscription {
+    order: 3;
+  }
+
+  .footer__navigation--shedule {
+    order: 4;
+  }
+}

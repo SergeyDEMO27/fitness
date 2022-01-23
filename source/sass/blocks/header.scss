@@ -1,0 +1,285 @@
+.header {
+  min-height: 658px;
+  background-image: url("../img/bg/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__wrapper {
+  position: relative;
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
+  color: $color-default-white;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 113px;
+  padding-top: 30px;
+  padding-left: 103px;
+  padding-right: 103px;
+}
+
+.header__logo-image {
+  width: 89px;
+  height: 20px;
+}
+
+.header__link {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  font-family: "Bebas Neue";
+  color: $color-default-white;
+
+  &:hover {
+    color: #b4b4b4;
+  }
+}
+
+.header__offers {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 199px;
+  text-align: end;
+  align-items: flex-end;
+
+  &::after {
+    position: absolute;
+    bottom: -43px;
+    left: 364px;
+    width: 36.603vw;
+    height: 40.703vw;
+    min-width: 480px;
+    min-height: 533px;
+    max-width: 500px;
+    max-height: 556px;
+    content: "";
+    background-image: url("../img/bg/header-man-bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  // &::after {
+  //   position: absolute;
+  //   top: clamp(-6.15vw, -6.15vw, -116px);
+  //   //top: -116px;
+  //   left: 364px;
+  //   content: "";
+  //   max-width: 500px;
+  //   width: 36vw;
+  //   max-height: 556px;
+  //   height: 45vw;
+  //   background-image: url("../img/bg/header-man-bg.jpg");
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  // }
+}
+
+.header__offers-title {
+  margin-top: 5px;
+  margin-bottom: 65px;
+  font-size: 109px;
+  font-weight: bold;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  font-family: "Bebas Neue";
+}
+
+.header__offers-title--location {
+  font-size: 49px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.header__offers-list {
+  position: absolute;
+  top: 189px;
+  left: -76px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.header__offers-link {
+  width: 233px;
+  height: 61px;
+  padding-top: 15px;
+  color: $color-default-white;
+
+  &:hover {
+    color: #b4b4b4;
+    border-color: #b4b4b4;
+  }
+}
+
+.header__social {
+  position: absolute;
+  right: 102px;
+  bottom: -17px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__social-item {
+  margin-bottom: 9px;
+
+  a {
+    font-size: 12px;
+    color: $color-default-white;
+  }
+
+  &:hover a {
+    color: #b4b4b4;
+  }
+}
+
+@media (min-width: "768px") and (max-width: "1199px") {
+  .header {
+    min-height: 554px;
+    background-image: url("../img/bg/header-bg.jpg");
+  }
+
+  .header__wrapper {
+    max-width: 768px;
+    background: none;
+  }
+
+  .header__container {
+    max-width: 678px;
+    margin-bottom: 72px;
+    padding: 0;
+    padding-top: 38px;
+  }
+
+  .header__logo-image {
+    width: 82px;
+    height: 17px;
+  }
+
+  .header__link {
+    font-size: 24px;
+  }
+
+  .header__offers {
+    margin-left: 69px;
+
+    &::after {
+      top: -54px;
+      left: 330px;
+      min-width: auto;
+      min-height: auto;
+      width: 324px;
+      height: 390px;
+      background-position: -27px center;
+      background-size: cover;
+    }
+
+    // &::after {
+    //   top: -53px;
+    //   left: 330px;
+    //   width: 324px;
+    //   height: 390px;
+    // }
+  }
+
+  .header__offers-title {
+    margin-top: 1px;
+    margin-bottom: 47px;
+    font-size: 86px;
+  }
+
+  .header__offers-title--location {
+    font-size: 34px;
+    margin: 0;
+  }
+
+  .header__offers-list {
+    top: 134px;
+    left: -24px;
+  }
+
+  .header__offers-link {
+    width: 186px;
+  }
+
+  .header__social {
+    display: none;
+  }
+}
+
+@media (min-width: "320px") and (max-width: "767px") {
+  .header {
+    min-height: 491px;
+    background-image: url("../img/bg/header-bg.jpg");
+  }
+
+  .header__wrapper {
+    width: 290px;
+    min-height: 491px;
+    background: none;
+  }
+
+  .header__container {
+    max-width: 290px;
+    margin-bottom: 73px;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header__logo-image {
+    width: 68px;
+    height: 15px;
+  }
+
+  .header__link {
+    font-size: 20px;
+  }
+
+  .header__offers {
+    width: 290px;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .header__offers-title {
+    margin-bottom: 49px;
+    font-size: 78px;
+  }
+
+  .header__offers-title--location {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .header__offers-list {
+    top: 121px;
+    left: 0;
+  }
+
+  .header__offers-link {
+    width: calc(100% + 1px);
+    height: 63px;
+  }
+
+  .header__social {
+    display: none;
+  }
+}

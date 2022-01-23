@@ -1,0 +1,161 @@
+.feedback {
+  min-height: 452px;
+}
+
+.feedback__wrapper {
+  max-width: 683px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.feedback__title {
+  margin-bottom: 66px;
+  font-size: 49px;
+  font-weight: bold;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.feedback__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.feedback__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feedback__comment {
+  position: relative;
+  width: 560px;
+  min-height: 242px;
+  padding-top: 37px;
+  padding-left: 170px;
+  padding-bottom: 37px;
+  background-color: #1c3374;
+  color: $color-default-white;
+  text-align: left;
+  box-shadow: 4px 4px 12px 2px rgba(34, 60, 80, 0.2);
+}
+
+.feedback__comment-image {
+  position: absolute;
+  top: 62px;
+  left: 63px;
+}
+
+.feedback__comment-wrapper {
+  max-width: 330px;
+}
+
+.feedback__comment-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feedback__comment-description {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.feedback__button {
+  width: 16px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  svg {
+    fill: none;
+    stroke: #afafaf;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    stroke: #636363;
+  }
+}
+
+.feedback__button-next {
+  transform: scaleX(-1);
+}
+
+@media (min-width: "768px") and (max-width: "1199px") {
+  .feedback {
+    min-height: 489px;
+    padding-top: 35px;
+    background-color: #f4f4f4;
+  }
+
+  .feedback__wrapper {
+    max-width: 678px;
+  }
+
+  .feedback__title {
+    margin-bottom: 53px;
+    font-size: 42px;
+  }
+
+  .feedback__comment {
+    width: 566px;
+  }
+}
+
+@media (min-width: "320px") and (max-width: "767px") {
+  .feedback {
+    min-height: 479px;
+  }
+
+  .feedback__wrapper {
+    max-width: 290px;
+  }
+
+  .feedback__title {
+    margin-bottom: 50px;
+    font-size: 32px;
+  }
+
+  .feedback__comment {
+    width: 226px;
+    min-height: 335px;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .feedback__comment-image {
+    top: 40px;
+    left: 41px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .feedback__comment-wrapper {
+    max-width: 176px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .feedback__comment-title {
+    width: 77px;
+    margin-left: auto;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  .feedback__comment-description {
+    text-align: center;
+  }
+
+  .feedback__button {
+    width: 12px;
+    height: 26px;
+  }
+}

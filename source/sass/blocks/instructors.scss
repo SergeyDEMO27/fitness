@@ -1,0 +1,269 @@
+.instructors {
+  width: 100%;
+  min-height: 505px;
+  color: $color-default-white;
+  background-color: $color-default-white;
+}
+
+.instructors__title {
+  max-width: 1155px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 67px;
+  font-size: 49px;
+  font-weight: bold;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.instructors__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1303px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 9px;
+  padding-left: 10px;
+}
+
+.instructors__list {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.instructors__item {
+  position: relative;
+  max-width: 260px;
+  width: 25%;
+  background-color: #c2c7d5;
+
+  &:hover {
+    box-shadow: 4px 4px 12px 2px rgba(34, 60, 80, 0.2);
+  }
+}
+
+.instructors__item-link {
+  &:hover > .instructors__item-description {
+    display: block;
+  }
+
+  &:hover > .instructors__item-title {
+    top: 30px;
+  }
+}
+
+.instructors__item-link {
+  color: $color-default-white;
+}
+
+.instructors__item-title {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 10;
+  text-align: center;
+}
+
+.instructors__item-description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 52px;
+  background-color: #102654;
+  opacity: 89%;
+}
+
+.instructors__item-description-title {
+  text-align: center;
+  font-size: 16px;
+  color: #b6bdcc;
+}
+
+.instructors__item-description-list {
+  max-width: 125px;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+}
+
+.instructors__item-description-item {
+  position: relative;
+  width: 160px;
+  font-size: 14px;
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
+}
+
+.instructors__button {
+  width: 16px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  svg {
+    fill: none;
+    stroke: #afafaf;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    stroke: #636363;
+  }
+}
+
+.instructors__button--next {
+  transform: scaleX(-1);
+}
+
+@media (min-width: "768px") and (max-width: "1199px") {
+  .instructors {
+    min-height: 542px;
+    padding-top: 35px;
+    background-color: #f4f4f4;
+  }
+
+  .instructors__wrapper {
+    max-width: 678px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .instructors__title-wrapper {
+    max-width: 566px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .instructors__title {
+    margin-bottom: 54px;
+    font-size: 42px;
+  }
+
+  .instructors__container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .instructors__list {
+    width: 566px;
+    padding: 0;
+  }
+
+  .instructors__item {
+    max-width: 268px;
+    width: 268px;
+    height: 294px;
+    background-color: #bcc5d7;
+  }
+
+  .instructors__item-link {
+    &:hover > .instructors__item-title {
+      top: 35px;
+    }
+  }
+
+  .instructors__item-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .instructors__item-title {
+    font-size: 18px;
+  }
+
+  .instructors__item-description {
+    padding-top: 54px;
+  }
+
+  .instructors__item-description-title {
+    margin-bottom: 32px;
+  }
+
+  .instructors__item-description-list {
+    max-width: 124px;
+    text-align: left;
+  }
+
+  .instructors__item-description-item {
+    margin-bottom: 9px;
+
+    &::after {
+      left: -17px;
+    }
+  }
+}
+
+@media (min-width: "320px") and (max-width: "767px") {
+  .instructors {
+    min-height: 418px;
+  }
+
+  .instructors__wrapper {
+    max-width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .instructors__title {
+    margin-bottom: 50px;
+    font-size: 32px;
+  }
+
+  .instructors__container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .instructors__list {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .instructors__item {
+    max-width: 226px;
+    width: 100%;
+  }
+
+  .instructors__item-description-list {
+    text-align: left;
+  }
+
+  .instructors__item-image {
+    width: 226px;
+    height: 274px;
+  }
+
+  .instructors__button {
+    width: 10px;
+    height: 19px;
+  }
+}

@@ -1,0 +1,339 @@
+.offers__container {
+  position: relative;
+  background-color: #f8f9fc;
+
+  &::after {
+    right: 0;
+    bottom: -150px;
+    position: absolute;
+    content: "";
+    width: 287px;
+    height: 494px;
+    background-image: url("../img/bg/offers-desk-bg.png");
+    z-index: 1;
+  }
+}
+
+.offers__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1160px;
+  min-height: 851px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 87px;
+  z-index: 10;
+}
+
+.offers__title {
+  margin-bottom: 53px;
+  font-size: 49px;
+  font-weight: bold;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.offers__time {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 341px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
+  list-style: none;
+
+  &::after {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #dedfe2;
+  }
+}
+
+.offers__time-item {
+  position: relative;
+  font-size: 20px;
+  color: #102654;
+  opacity: 50%;
+
+  &:hover button {
+    color: #b4b4b4;
+    cursor: pointer;
+  }
+
+  button:focus {
+    color: #b4b4b4;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.offers__time-item-active {
+  opacity: 100%;
+
+  &::after {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #d10a42;
+    z-index: 10;
+  }
+
+  &:hover button {
+    color: #102654;
+  }
+
+  &:hover button {
+    cursor: auto;
+  }
+
+  button:focus {
+    color: #102654;
+  }
+}
+
+.offers__price {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offers__price-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offers__price-list-item {
+  display: none;
+}
+
+.offers__price-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(31% + 1px);
+  min-height: 448px;
+  padding-top: 32px;
+  border: 7px solid transparent;
+  background-color: $color-default-white;
+
+  &:hover {
+    border: 7px solid #d10a42;
+    border-image: linear-gradient(
+      to right top,
+      #00359f,
+      #d10a42,
+      #00359f,
+      #d10a42
+    );
+    border-image-slice: 1;
+  }
+
+  &:hover .offers__price-link {
+    color: $color-default-white;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    border: none;
+  }
+
+  .offers__price-link:focus {
+    color: $color-default-white;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    border: none;
+  }
+}
+
+.offers__price-item--active {
+  display: block;
+  width: 100%;
+}
+
+.offers__price-title {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #102654;
+}
+
+.offers__price-description {
+  margin-top: 3px;
+  margin-bottom: 38px;
+  font-size: 16px;
+  color: #495a7d;
+}
+
+.offers__price-count {
+  position: relative;
+  margin-bottom: 67px;
+  margin-left: -43px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #103aae;
+  z-index: 10;
+}
+
+.offers__price-count-ruble {
+  position: absolute;
+  top: 0;
+  right: -47px;
+  color: #102654;
+}
+
+.offers__price-count-shadow {
+  position: absolute;
+  top: -25px;
+  left: -18px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #e8e8e8;
+  z-index: -1;
+}
+
+.offers__price-link {
+  width: 208px;
+  height: 66px;
+  padding-top: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #102654;
+  border-width: 2px;
+  border-color: #102654;
+  text-transform: uppercase;
+}
+
+@media (min-width: "768px") and (max-width: "1199px") {
+  .offers__container {
+    &::after {
+      right: 0;
+      bottom: -125px;
+      width: 347px;
+      height: 444px;
+      background-image: url("../img/bg/offers-tabl-bg.png");
+    }
+  }
+
+  .offers__wrapper {
+    max-width: 442px;
+    min-height: 1779px;
+    padding-top: 69px;
+  }
+
+  .offers__title {
+    margin-bottom: 44px;
+    font-size: 42px;
+  }
+
+  .offers__time {
+    margin-bottom: 59px;
+    width: 332px;
+  }
+
+  .offers__time-item-active::after,
+  .offers__time::after {
+    bottom: -15px;
+  }
+
+  .offers__time-item {
+    font-size: 18px;
+  }
+
+  .offers__price {
+    flex-direction: column;
+    margin-right: -17px;
+  }
+
+  .offers__price-item {
+    max-width: 442px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .offers__price-item--active {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: "320px") and (max-width: "767px") {
+  .offers__container {
+    &::after {
+      display: none;
+    }
+  }
+
+  .offers__wrapper {
+    max-width: 290px;
+    min-height: 1487px;
+    padding-top: 43px;
+  }
+
+  .offers__title {
+    margin-bottom: 29px;
+    font-size: 32px;
+  }
+
+  .offers__time {
+    width: 289px;
+    margin-bottom: 48px;
+  }
+
+  .offers__time-item-active::after,
+  .offers__time::after {
+    bottom: -14px;
+  }
+
+  .offers__time-item {
+    font-size: 16px;
+  }
+
+  .offers__price {
+    flex-direction: column;
+  }
+
+  .offers__price-item {
+    width: 100%;
+    min-height: 384px;
+    margin-bottom: 35px;
+    padding-top: 22px;
+  }
+
+  .offers__price-title {
+    margin-bottom: 7px;
+    font-size: 22px;
+  }
+
+  .offers__price-description {
+    margin-bottom: 30px;
+  }
+
+  .offers__price-count {
+    margin-bottom: 53px;
+    margin-left: -31px;
+    font-size: 48px;
+  }
+
+  .offers__price-count-shadow {
+    font-size: 80px;
+  }
+
+  .offers__price-count-ruble {
+    right: -37px;
+  }
+}

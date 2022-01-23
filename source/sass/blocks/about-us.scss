@@ -1,0 +1,216 @@
+.about-us {
+  width: 100%;
+  min-height: 756px;
+  padding-top: 120px;
+  background-color: $color-default-white;
+}
+
+.about-us__container {
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-us__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-us__info {
+  width: 419px;
+  padding-top: 15px;
+  padding-left: 60px;
+  color: #102654;
+}
+
+.about-us__title {
+  margin-bottom: 25px;
+  font-size: 49px;
+  font-weight: bold;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.03em;
+}
+
+.about-us__description-area {
+  margin-bottom: 41px;
+  font-size: 18px;
+}
+
+.about-us__description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.about-us__description-zone {
+  display: inline-block;
+  margin-top: 9px;
+}
+
+.about-us__images {
+  position: relative;
+}
+
+.about-us__image {
+  max-width: 660px;
+  width: 100%;
+  max-height: 401px;
+  background-color: black;
+}
+
+.about-us__video {
+  position: absolute;
+  bottom: -115px;
+  left: -63px;
+}
+
+.about-us__video-play {
+  position: absolute;
+  bottom: -56px;
+  left: 75px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/bg/about-us-play-button.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/bg/about-us-play-button-black.png");
+  }
+}
+
+@media (min-width: "768px") and (max-width: "1199px") {
+  .about-us {
+    padding-top: 55px;
+    background-color: #f4f4f4;
+  }
+
+  .about-us__container {
+    max-width: 768px;
+    min-height: 799px;
+  }
+
+  .about-us__wrapper {
+    flex-direction: column;
+    max-width: 678px;
+    align-items: center;
+  }
+
+  .about-us__info {
+    width: 502px;
+    margin-bottom: 27px;
+    padding-top: 15px;
+    padding-left: 0;
+    color: #102654;
+  }
+
+  .about-us__title {
+    font-size: 42px;
+    margin-bottom: 22px;
+    margin-left: 112px;
+  }
+
+  .about-us__description-area {
+    margin-bottom: 36px;
+    margin-left: 112px;
+    font-size: 18px;
+  }
+
+  .about-us__description-zone {
+    display: none;
+  }
+
+  .about-us__image {
+    max-width: 678px;
+    width: 678px;
+    height: 345px;
+  }
+
+  .about-us__video {
+    bottom: -83px;
+    left: 205px;
+    width: 266px;
+    height: 167px;
+  }
+
+  .about-us__video-play {
+    bottom: -37px;
+    left: 300px;
+    width: 73px;
+    height: 73px;
+  }
+}
+
+@media (min-width: "320px") and (max-width: "767px") {
+  .about-us {
+    padding-top: 43px;
+  }
+
+  .about-us__container {
+    min-height: 882px;
+  }
+
+  .about-us__wrapper {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .about-us__info {
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 17px;
+    padding: 0;
+  }
+
+  .about-us__title {
+    margin-bottom: 15px;
+    font-size: 32px;
+  }
+
+  .about-us__description {
+    max-width: 269px;
+  }
+
+  .about-us__description-area {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .about-us__description-zone {
+    display: none;
+  }
+
+  .about-us__image {
+    width: 100%;
+    height: 313px;
+    margin-bottom: 40px;
+    object-fit: cover;
+  }
+
+  .about-us__video {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 167px;
+    object-fit: cover;
+    background-color: red;
+    background-image: url("../img/bg/play-back.png");
+  }
+
+  .about-us__video-play {
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 36px);
+    width: 73px;
+    height: 73px;
+    background-image: url("../img/bg/about-us-play-button.png");
+  }
+}
