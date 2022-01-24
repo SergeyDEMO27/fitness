@@ -62,11 +62,11 @@
     font-size: 14px;
     color: #102654;
     transition: 0.7s;
-  }
 
-  &:hover a,
-  &:focus a {
-    color: red;
+    &:hover,
+    &:focus {
+      color: #b4b4b4;
+    }
   }
 }
 
