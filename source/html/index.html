@@ -32,10 +32,15 @@
           </div>
           <div class="about-us__images">
             <picture>
+              <source type="image/webp" srcset="./img/content/about-us-img-1x.webp 1x, /img/content/about-us-img-2x.webp 2x">
               <img class="about-us__image" src="./img/content/about-us-img-1x.png" srcset="img/./img/content/about-us-img-2x.png 2x" width="660" height="401" alt="Изображение тренажерного зала Supergym">
             </picture>
             <video class="about-us__video" poster="./img/content/image-supergym-video.png" width="364" height="228"></video>
-            <div class="about-us__video-play" tabindex="0"></div>
+            <div class="about-us__video-play" tabindex="0">
+              <svg width="13" height="15" viewBox="0 0 13 15">
+                <use xlink:href="./img/sprite_auto.svg#play-triangle"></use>
+              </svg>
+            </div>
           </div>
         </div>
         </div>
