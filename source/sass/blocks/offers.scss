@@ -135,6 +135,7 @@
   padding-top: 32px;
   border: 7px solid transparent;
   background-color: $color-default-white;
+  transition: 0.7s;
 
   &:hover {
     border: 7px solid #d10a42;

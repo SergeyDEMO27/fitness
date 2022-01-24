@@ -74,6 +74,7 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     text-decoration: underline;
+    transition: 0.7s;
   }
 
   .promo-event__item-image {
@@ -107,8 +108,10 @@
   color: #1c3374;
   text-transform: uppercase;
   text-decoration: underline;
+  transition: 0.7s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #b4b4b4;
   }
 }

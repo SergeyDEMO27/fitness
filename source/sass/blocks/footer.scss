@@ -42,9 +42,11 @@
 .footer__social-link {
   font-size: 14px;
   color: $color-default-white;
+  transition: 0.7s;
 }
 
-.footer__navigation-link:hover {
+.footer__navigation-link:hover,
+.footer__navigation-link:focus {
   color: #b4b4b4;
 }
 
@@ -60,9 +62,11 @@
 .footer__social-link {
   svg {
     fill: #ffffff;
+    transition: 0.7s;
   }
 
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: #b4b4b4;
   }
 }

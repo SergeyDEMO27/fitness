@@ -112,10 +112,12 @@
   font-size: 12px;
   font-weight: bold;
   color: $color-default-white;
+  transition: 0.7s;
 
-  &:hover {
-    color: #b4b4b4;
-    border-color: #b4b4b4;
+  &:hover,
+  &:focus {
+    color: #1c3374;
+    border-color: #1c3374;
   }
 }
 

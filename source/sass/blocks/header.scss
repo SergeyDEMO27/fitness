@@ -37,9 +37,11 @@
   letter-spacing: 0.03em;
   font-family: "Bebas Neue";
   color: $color-default-white;
+  transition: 0.7s;
 
-  &:hover {
-    color: #b4b4b4;
+  &:hover,
+  &:focus {
+    color: #000000;
   }
 }
 
@@ -67,21 +69,6 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-
-  // &::after {
-  //   position: absolute;
-  //   top: clamp(-6.15vw, -6.15vw, -116px);
-  //   //top: -116px;
-  //   left: 364px;
-  //   content: "";
-  //   max-width: 500px;
-  //   width: 36vw;
-  //   max-height: 556px;
-  //   height: 45vw;
-  //   background-image: url("../img/bg/header-man-bg.jpg");
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  // }
 }
 
 .header__offers-title {
@@ -116,10 +103,12 @@
   height: 61px;
   padding-top: 15px;
   color: $color-default-white;
+  transition: 0.7s;
 
-  &:hover {
-    color: #b4b4b4;
-    border-color: #b4b4b4;
+  &:hover,
+  &:focus {
+    color: #000000;
+    border-color: #000000;
   }
 }
 
@@ -138,10 +127,12 @@
   a {
     font-size: 12px;
     color: $color-default-white;
+    transition: 0.7s;
   }
 
-  &:hover a {
-    color: #b4b4b4;
+  &:hover a,
+  &:focus a {
+    color: #000000;
   }
 }
 
@@ -185,13 +176,6 @@
       background-position: -27px center;
       background-size: cover;
     }
-
-    // &::after {
-    //   top: -53px;
-    //   left: 330px;
-    //   width: 324px;
-    //   height: 390px;
-    // }
   }
 
   .header__offers-title {

@@ -6,7 +6,6 @@
 
 .free-lesson__wrapper {
   max-width: 413px;
-  //margin-right: clamp(4vw, 4vw, 168px);
   margin-right: 168px;
   margin-left: auto;
 }
@@ -53,6 +52,7 @@
   &::placeholder {
     font-size: 14px;
     color: $color-default-white;
+    transition: 0.7s;
   }
 
   &:focus {
@@ -73,8 +73,10 @@
   font-weight: bold;
   color: $color-default-white;
   text-transform: uppercase;
+  transition: 0.7s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #b4b4b4;
     border-color: #b4b4b4;
   }
